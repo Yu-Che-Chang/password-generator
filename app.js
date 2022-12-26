@@ -2,7 +2,7 @@ const express = require('express')
 const port = 3000
 const exphds = require('express-handlebars')
 const app = express()
-const generatePassword = require('./generate_password')
+const generatePassword = require('./generate-password')
 
 app.engine('handlebars', exphds({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
